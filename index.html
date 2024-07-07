@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animated Tabs</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="center">
+		<div id="container" class="container">
+			<div class="tabs__wrapper">
+				<div class="shadow__tabs">
+					<div data-state="stopped" id="shadow"></div>
+				</div>
+
+				<ul class="main__tabs">
+					<li id="tab1" data-state="active" class="center">
+						<button onclick="moveTab(1)">Web Design</button>
+					</li>
+
+					<li id="tab2" data-state="inactive" class="center">
+						<button onclick="moveTab(2)">UI/UX Design</button>
+					</li>
+
+					<li id="tab3" data-state="inactive" class="center">
+						<button onclick="moveTab(3)">Video Editing</button>
+					</li>
+
+					<li id="tab4" data-state="inactive" class="center">
+						<button onclick="moveTab(4)">Graphics Design</button>
+					</li>
+
+					<li id="tab5" data-state="inactive" class="center">
+						<button onclick="moveTab(5)">Content Creation</button>
+					</li>
+				</ul>
+			</div>
+
+			<div class="tabs__content">
+				<div id="content-wrapper" class="content__wrapper">
+					<div class="data__wrapper">
+						<div class="tab__content">Web Design Content Here</div>
+					</div>
+
+					<div class="data__wrapper">
+						<div class="tab__content">UI/UX Design Content Here</div>
+					</div>
+
+					<div class="data__wrapper">
+						<div class="tab__content">Video Editing Content Here</div>
+					</div>
+
+					<div class="data__wrapper">
+						<div class="tab__content">Graphics Design Content Here</div>
+					</div>
+
+					<div class="data__wrapper">
+						<div class="tab__content">Content Creation Content Here</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
